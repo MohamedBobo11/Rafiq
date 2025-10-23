@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafiq.Contracts", "src\Rafi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafiq.Application", "src\Rafiq.Application\Rafiq.Application.csproj", "{22C6F042-6DDC-4EC4-AB16-BCFFA4EF89B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafiq.Domin", "src\Rafiq.Domin\Rafiq.Domin.csproj", "{C3546691-2C03-4823-A9DE-85F027A2987F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafiq.Domain", "src\Rafiq.Domain\Rafiq.Domain.csproj", "{C3546691-2C03-4823-A9DE-85F027A2987F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafiq.Infrastructure", "src\Rafiq.Infrastructure\Rafiq.Infrastructure.csproj", "{9282B455-224A-45AC-9ADC-7A194CF7BE8E}"
 EndProject
