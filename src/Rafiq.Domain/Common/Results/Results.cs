@@ -1,5 +1,4 @@
 using System.ComponentModel;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.Json.Serialization;
 
 namespace Rafiq.Domain.Common.Results;
@@ -71,6 +70,7 @@ public sealed class Result<TValue> : IResult<TValue>
         _value = value;
         IsSuccess = true;
     }
+
     public static implicit operator Result<TValue>(TValue value)
         => new(value);
     public static implicit operator Result<TValue>(Error error)
@@ -78,11 +78,11 @@ public sealed class Result<TValue> : IResult<TValue>
     public static implicit operator Result<TValue>(List<Error> errors)
         => new(errors);
 
-public TNextValue Match<TNextValue>(Func<TValue, TNextValue> onValue, Func<List<Error>, TNextValue> onError)
- => IsSuccess ? onValue(_value!) : onError(_errors);
+    public TNextValue Match<TNextValue>(Func<TValue, TNextValue> onValue, Func<List<Error>, TNextValue> onError)
+     => IsSuccess ? onValue(_value!) : onError(_errors);
+}
+    public readonly record struct Success;
+    public readonly record struct Created;
+    public readonly record struct Deleted;
+    public readonly record struct Updated;
 
-
-public readonly record struct Success;
-public readonly record struct Created;
-public readonly record struct Deleted;
-public readonly record struct Updated;
