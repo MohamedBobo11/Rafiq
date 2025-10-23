@@ -1,4 +1,4 @@
-namespace Rafiq.Domain.Common.Results
+namespace Rafiq.Domain.Common.Results.Abstractions
 {
     public interface IResult
     {

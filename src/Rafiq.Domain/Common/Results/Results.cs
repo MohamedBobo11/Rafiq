@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Text.Json.Serialization;
+using Rafiq.Domain.Common.Results.Abstractions;
 
 namespace Rafiq.Domain.Common.Results;
 
